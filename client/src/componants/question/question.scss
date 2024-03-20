@@ -1,0 +1,162 @@
+.question{
+    display: flex;
+    height: 112vh;
+    .left{
+        flex: 1;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        //max-width: 1000px;
+        padding: 20px;
+        gap: 30px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+        width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+        }
+        .q{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 100px;
+            .profile{
+                display: flex;
+                justify-content: space-between;
+    
+                span{
+                    color: #888;
+                }
+    
+                .link{
+                    color: inherit;
+                    text-decoration: none;
+    
+                    span{
+                    color: #555;
+                    font-weight: bold;
+                    cursor: pointer;
+                    }
+    
+                    :hover{
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .answer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .user{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    color: #888;
+                }
+                .userinfo{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+
+                    .link{
+                        color: inherit;
+                        text-decoration: none;
+
+                        span{
+                        color: #555;
+                        font-weight: bold;
+                        cursor: pointer;
+                        }
+
+                        :hover{
+                            color: black;
+                            font-weight: bold;
+                        }
+                    }
+
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        border: none;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+        }
+
+        .postanswer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h3{
+                color: #555;
+            }
+
+            .quill{
+                height: 100px;
+                width: 100%;
+                color: #555;
+                resize: none;
+                caret-color: black;
+                padding: 5px;
+                font-size: 16px;
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                
+                
+                &::-webkit-scrollbar {
+                width: 10px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                background-color: #888;
+                border-radius: 5px;
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                background-color: #555;
+                }
+            }
+            .add{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button{
+                    width: 200px;
+                    padding: 7.5px;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    background-color: #333;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                :hover{
+                    color: #333;
+                    border: 1px solid #333;
+                    background-color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .right{
+        flex: 1.5;
+    }
+}

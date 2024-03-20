@@ -1,0 +1,68 @@
+.footer{
+    background-color: #333;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    //justify-content: space-around;
+    gap: 200px;
+    .link{
+        color: inherit;
+        text-decoration: none;
+        
+    }
+    .copy{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-left: 30px;
+        gap: 40px;
+        span{
+            align-items: center;
+            font-weight: bold;
+        }
+        ul{
+            display: flex;
+            gap: 30px;
+            :hover{
+                    color: black;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            li{
+                list-style: none;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .foots{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+
+        span{
+            align-items: center;
+            font-weight: bold;
+        }
+        ul{
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            :hover{
+                    color: black;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            li{
+                list-style: none;
+            }
+        }
+    }
+}
